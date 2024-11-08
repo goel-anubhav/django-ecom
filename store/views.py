@@ -1,13 +1,14 @@
 from django.shortcuts import render
 
-def stores(request):
-    context={}
-    return render(request, 'store/Store.html', context)
+# Create your views here.
+def store(request):
+    return render(request, 'store/store.html')
+
+# def main(request):
+#     return render(request, 'store/main.html')   
+
 def cart(request):
-    context={}
-    return render(request, 'store/Cart.html', context)
+    return render(request, 'store/cart.html')
 
 def checkout(request):
-    context={}
-    return render(request, 'store/Checkout.html', context)
-
+    return render(request, 'store/checkout.html')
